@@ -7,6 +7,5 @@ for line in urlopen("https://raw.githubusercontent.com/zapret-info/z-i/master/nx
     domain = line.decode()
     domains.append(domain)
 
-
-
-    re.search(pattern, string)
+for domain in domains:
+    re.search("[\w\d]+.([\w\d]+.[\w\d])", domain)
